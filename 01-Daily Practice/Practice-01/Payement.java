@@ -28,7 +28,6 @@ public class Main {
 
         double amount = 1500.00;
 
-        // Interface reference demonstrating runtime polymorphism
         Payment payment;
 
         payment = new UPI();
