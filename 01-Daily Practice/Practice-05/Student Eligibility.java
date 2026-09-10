@@ -1,13 +1,14 @@
 import java.util.Scanner;
+
 class InvalidAgeException extends Exception {
     public InvalidAgeException(String message) {
         super(message);
     }
 }
 
-public class StudentEligibility {
+public class Main {
 
-
+   
     static void checkAge(int age) throws InvalidAgeException {
         if (age < 18 || age > 60) {
             throw new InvalidAgeException("Invalid age: " + age);
@@ -25,7 +26,7 @@ public class StudentEligibility {
         int age = sc.nextInt();
 
         try {
-            // Nested try-catch
+           
             try {
                 checkAge(age);
 
